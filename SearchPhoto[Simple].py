@@ -12,7 +12,7 @@ LenTxt = len(open("List.txt", 'r').readlines())
 
 
 print("""
-ENG: Choice type of file
+ENG: Choose the type of a file
 UA:Оберіть тип файлу
 RU:Выберите тип файла
 
@@ -21,10 +21,10 @@ RU:Выберите тип файла
 [2]png
 [3]jpg
 [4]gif
-[5]Another/Інше/Другое
+[5]Other/Інше/Другое
 """)
-Choice = input()
-if Choice == "1":
+Choice = input() #Isn't switch() better?
+if Choice == "1": #This should and can be simplified
     while True:
         Adr = url + ''.join([random.choice(list(Key)) for x in range(7)]) + ".ico"
         RequestedImage = requests.get(Adr, allow_redirects=True).content
@@ -70,7 +70,7 @@ if Choice == "4":
             ListWrite.close();
 if Choice == "5":
     print("""
-    ENG: Input your type
+    ENG: Enter your custom type
     UA: Введіть свій тип
     RU: Введите свой тип""")
     OwnType = input()
