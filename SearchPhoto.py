@@ -1,20 +1,13 @@
-#####################################
-#                                   #
-#       Autor:RostislavFisher       #
-#       Country:Ukraine             #
-#####################################
 import requests
 import random
 
 print("""
-ENG: Choice Service
-UA:Оберіть сервіс
-RU:Выберите сервис
-
+EN: Choose a hosting
+UA: Оберіть хостінг
+RU: Выберите хостинг
 =====================
 [1]Imgur
 [2]LightShot
-[3]
 """)
 
 Formats = {"1": ".ico", "2": ".png", "3": ".jpg", "4": ".gif"}
@@ -38,21 +31,20 @@ def generate(Format):
 ChoiceService = input()
 if ChoiceService == "1":
     print("""
-ENG: Choice type of file
-UA:Оберіть тип файлу
-RU:Выберите тип файла
-
+EN: Choose a type of files
+UA: Оберіть тип файлу
+RU: Выберите тип файла
 =====================
 [1]ico
 [2]png
 [3]jpg
 [4]gif
-[5]Another/Інше/Другое
+[5]Other/Інше/Другое
     """)
     Choice = input()
     if Choice == "5":
         print("""
-ENG: Input your type
+EN: Input your type
 UA: Введіть свій тип
 RU: Введите свой тип
         """)
@@ -71,9 +63,9 @@ if ChoiceService == "2":
     RemovedReq = bs4.BeautifulSoup(RemovedReq.text, "html.parser")
     RemovedReq = RemovedReq.find('img', id='screenshot-image')['src']
     print("""
-ENG: Choice file amount
-UA:Оберіть кількість файлів
-RU:Выберите количество файлов
+EN: Choose the amount of files
+UA: Оберіть кількість файлів
+RU: Выберите количество файлов
 
 =====================
     
