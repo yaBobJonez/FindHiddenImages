@@ -1,3 +1,5 @@
+# DEPRECATED FORK. WILL BE DELETED SOON. PLEASE USE THE ORIGINAL PROJECT.
+
 # English
 This repository is made to search for images, that located on hosting services such as Lightshot, Imgur(, there are a lot of images from previous service), ImgBB.
 You have the simple (modificable) version, and the full version (Will be getting updates).
